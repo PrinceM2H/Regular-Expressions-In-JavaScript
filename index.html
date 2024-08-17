@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script>
+	function textRegex(){
+		let regex = /raj/i;
+		let text = document.getElementById("input-text").value;
+
+		if(regex.test(text)){
+			document.getElementById("result").innerHTML = "Match Found";
+		}else 
+		document.getElementById("result").innerHTML = "Not Found";
+	}   
+	</script>
+</head>
+<body>
+<input type="text" id="input-text" placeholder="Enter your text">
+<button onclick="textRegex()">Submit</button>
+<div id="result"></div>
+</body>
+</html>
